@@ -164,7 +164,7 @@ body{
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    background-image: url(./hao-wang-pVq6YhmDPtk-unsplash.jpg);
+    background-image: url(./bgofinsofld.PNG);
     z-index: -2;
     background-repeat: no-repeat;
     background-size: cover;
@@ -878,8 +878,6 @@ body{
         text-shadow: 2px 2px 7px #151515;
         font-family: 'Nunito', sans-serif;
         margin-left: 20px;
-    }#mainttl1{
-        background-image: url(./hao-wang-pVq6YhmDPtk-unsplash.jpg);
     }
     #mbappsnum{
         width: 100vw;

@@ -39,7 +39,7 @@ element.scrollIntoView({behavior: "smooth"});
 })
 app2.addEventListener('click',()=>{
   console.log('ok')
-  document.getElementById('mainappimg').style.backgroundImage = 'url(https://wallpaper.dog/large/10718031.jpg)'
+  document.getElementById('mainappimg').style.backgroundImage = 'url(./WallpaperDog-878515.jpg)'
   document.getElementById('appnpic').style.backgroundImage = 'url(./text-1671128023449.png)'
   document.getElementById('dwnldmbtn').style.display = 'none'
   document.getElementById('dwnldmbtn1').style.display = 'flex'
@@ -48,7 +48,7 @@ app2.addEventListener('click',()=>{
 })
 app1.addEventListener('click',()=>{
   console.log('ok')
-  document.getElementById('mainappimg').style.backgroundImage = 'url(https://images.hdqwalls.com/download/neon-bot-ck-1600x900.jpg)'
+  document.getElementById('mainappimg').style.backgroundImage = 'url(./dbwlpp.jpg)'
   document.getElementById('appnpic').style.backgroundImage = 'url(./text-1670696308341.png)'
   document.getElementById('rlsdt').innerText = 'AVAILABLE NOW'
   document.getElementById('dwnldmbtn1').style.display = 'none'
