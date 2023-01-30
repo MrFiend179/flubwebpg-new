@@ -1,5 +1,4 @@
 
-
 mcnav.addEventListener('mouseover', function handleMouseOver(){
     console.log('ok')
     document.getElementById('clrfmc').style.height = '90%'
@@ -49,7 +48,7 @@ app2.addEventListener('click',()=>{
 })
 app1.addEventListener('click',()=>{
   console.log('ok')
-  document.getElementById('mainappimg').style.backgroundImage = 'url(./dbwlpp.jpg)'
+  document.getElementById('mainappimg').style.backgroundImage = 'url(./mlwresd.PNG)'
   document.getElementById('appnpic').style.backgroundImage = 'url(./text-1670696308341.png)'
   document.getElementById('rlsdt').innerText = 'AVAILABLE NOW'
   document.getElementById('dwnldmbtn1').style.display = 'none'
@@ -91,7 +90,7 @@ dot1.addEventListener('click',()=>{
 
 const observer = new IntersectionObserver((entries)=>{
   entries.forEach((entry)=>{
-    console.log(entry)
+   // console.log(entry)
     if(entry.isIntersecting){
       entry.target.classList.add('show');
     }else{
