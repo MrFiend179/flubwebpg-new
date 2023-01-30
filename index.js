@@ -1,3 +1,13 @@
+window.addEventListener("load", function(){
+  // show the spinner
+  document.querySelector(".spinner").style.display = "flex";
+  // hide the spinner after the video has loaded
+  document.querySelector("video").addEventListener("loadeddata", function(){
+    document.querySelector(".spinner").style.display = "none";
+  });
+});
+
+
 
 mcnav.addEventListener('mouseover', function handleMouseOver(){
     console.log('ok')

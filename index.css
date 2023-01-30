@@ -4,6 +4,36 @@
     user-select: none;
     font-family: 'Nunito', sans-serif;
 }
+.spinner {
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    font-size: 10px;
+    background-color: #1a1a1a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 100000;
+}
+#sntrdvfldrsc{
+    width: 30%;
+    height: 100%;
+}
+#tpttlfbg{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+#btmbrldrm{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 ::-webkit-scrollbar{
     width: 7px;
     background-color: #202020;
@@ -21,6 +51,7 @@ html{
 body{
     background-color: rgba(18,18,18,255);
     overflow-x: hidden;
+    overflow: hidden;
 }
 #nvbroptons{
     display: none;
