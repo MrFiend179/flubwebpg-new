@@ -295,6 +295,16 @@
 	        $('#nav-icon1').click(function(){
 		        $(this).toggleClass('open');
 	        });
+            window.addEventListener("load", function(){
+            document.querySelector(".spinner").style.display = "flex";
+		        $('*').addClass('stpppls')
+		        $(this).toggleClass('open');
+            document.querySelector("video").addEventListener('canplay', function(){
+                document.querySelector(".spinner").style.display = "none"; 
+		        $('*').removeClass('stpppls')
+		        
+            });
+        });
         });
     </script>
 </body>

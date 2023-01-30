@@ -4,17 +4,28 @@
     user-select: none;
     font-family: 'Nunito', sans-serif;
 }
+.stpppls{
+    overflow: hidden;
+}
+.stpppls1{
+    overflow: auto;
+}
 .spinner {
     width: 100vw;
-    height: 100vh;
+    height: 115vh;
     text-align: center;
     font-size: 10px;
     background-color: #1a1a1a;
     display: flex;
     align-items: center;
     justify-content: center;
-    position: fixed;
+    position: absolute;
     z-index: 100000;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    flex-grow: 1;
 }
 #sntrdvfldrsc{
     width: 30%;
