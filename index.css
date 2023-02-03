@@ -118,21 +118,23 @@ body{
     align-items: center;
 }
 #mdwnbtn{
-    background: linear-gradient(to bottom right,#045DE9, #009FFD);
+    background: linear-gradient(to right,#045DE9, #009FFD);
     width: 123px;
-    height: 90%;
+    height: 100%;
     margin-right: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
-    border-radius: 35px;
     font-size: .6rem;
     letter-spacing: 2px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', sans-serif;
+    transition: all .3s ease;
 }
 #mdwnbtn:hover{
     background: linear-gradient(to bottom right,#045DE9,#045DE9 );
+    letter-spacing: 5px;
+    cursor: pointer;
 }
 #appsnav{
     width: 60px;
@@ -273,7 +275,14 @@ body{
     background-size: cover;
     background-position: center;
     z-index: 0;
+    transition: all .2s ease-in-out; 
+    -webkit-transition: all 0.3s ease-in-out;
+}
+#mainappimg div{
     transition: all .2s ease; 
+}
+#mainappimg:hover{
+    transform: scale(1.1);
 }
 #mbappsnum{
     width: 100vw;
@@ -347,6 +356,9 @@ body{
     height: 50px;
     margin-top: 27vh;
     margin-left: 30px;
+}
+#sidebr div{
+    cursor: pointer;
 }
 #sidebr{
     margin-left: 1.7vw;
@@ -459,12 +471,13 @@ body{
     align-items: center;
     height: 86%;
     width: 100%;
+    transition: all .1s ease;
 }
 .hidden{
     opacity: 0;
     filter: blur(3px);
-    transition: all 1s;
-    transform: translateX(-100%);
+    transition: all .3s;
+    transform: translateY(70%);
 }
 .show{
     opacity: 1;
@@ -523,21 +536,7 @@ body{
     align-items: center;
     height: 100%;
 }
-#woar1{
-    transition-delay: 100ms;
-}
-#woar2{
-    transition-delay: 200ms;
-}
-#woar3{
-    transition-delay: 400ms;
-}
-#woar4{
-    transition-delay: 100ms;
-}
-#woar5{
-    transition-delay: 200ms;
-}
+
 #micn1,#micn2,#micn3,#micn4,#micn5{
     width: 100%;
     height: 40%;
@@ -818,7 +817,7 @@ body{
     }
     #mainappimg1mb{
         background-color: #151515;
-        width: 87vw;
+        width: 90%;
         height: 90%;
         border-radius: 15px;
         filter: drop-shadow(0px 0px 5px rgb(41, 41, 41));
@@ -831,7 +830,7 @@ body{
     }
     #mainappimgmb{
         background-color: #151515;
-        width: 90vw;
+        width: 90%;
         height: 90%;
         border-radius: 15px;
         filter: drop-shadow(0px 0px 5px rgb(41, 41, 41));
@@ -840,13 +839,13 @@ body{
         background-size: cover;
         background-position: center;
         z-index: 0;
-        transition: all .2s ease; 
+        transition: all .2s ease;
     }
     #prcttl,#prcttl1,#dwnldmbtn1,#dwnldmbtn{
         display: none;
     }
     #mappsv{
-    max-height: 60vh;
+    max-height: 55vh;
     align-items:center;
     display:flex;
     overflow-x: auto;
@@ -857,14 +856,13 @@ body{
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-left: 4%;
     }
     #maap2mb{
-        min-width: 92vw;
+        min-width: 90vw;
         height: 100%;
         display: flex;
         align-items: center;
-        margin-left: 5%;
+        justify-content: center;
     }
     ::-webkit-scrollbar{
         display: none;
@@ -890,9 +888,9 @@ body{
         background-size:contain;
         background-repeat: no-repeat;
         margin-bottom: 3vh;
-        width: 180px;
+        width: 230px;
         height: 50px;
-        margin-top: 29vh;
+        margin-top: 26vh;
         margin-left: 20px;
     }
     #appnpicmb{
@@ -902,7 +900,7 @@ body{
     margin-bottom: 3vh;
     width: 180px;
     height: 50px;
-    margin-top: 27vh;
+    margin-top: 23vh;
     margin-left: 20px;
     }
     #rlsdtmb,#rlsdt1{
@@ -914,7 +912,7 @@ body{
     }
     #mappdescmb,#mappdesc1{
         color: white;
-        width: 290px;
+        width: 250px;
         font-weight: 550;
         font-size: 1rem;
         text-shadow: 2px 2px 7px #151515;

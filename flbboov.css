@@ -1007,8 +1007,8 @@ body{
     .hidden1{
         opacity: 0;
         filter: blur(3px);
-        transition: all 1s;
-        transform: translateX(-100%);
+        transition: all .3s;
+        transform: translateX(-50%);
     }
     .show1{
         opacity: 1;
