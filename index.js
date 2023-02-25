@@ -87,7 +87,7 @@ const element2 = document.getElementById('mainappimgmb');
 dot1.addEventListener('click',()=>{
   element2.scrollIntoView({behavior: "smooth"});
 })
-
+setTimeout(() => {
 const observer = new IntersectionObserver((entries)=>{
   entries.forEach((entry)=>{
    // console.log(entry)
@@ -101,6 +101,7 @@ const observer = new IntersectionObserver((entries)=>{
 const hiddenelements = document.querySelectorAll('.hidden')
 hiddenelements.forEach((el)=> observer.observe(el));
 
+}, 5000);
 let mybutton = document.getElementById("mstupbtn");
 mybutton.addEventListener('click',()=>{
   topFunction()

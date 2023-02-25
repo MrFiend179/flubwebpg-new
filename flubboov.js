@@ -29,22 +29,22 @@ document.addEventListener('scroll', function(e) {
 
 
 mapbvimgs1.addEventListener('click',()=>{
-  document.getElementById('rlbvimg').style.backgroundImage = 'url(https://pbs.twimg.com/media/FjtJ33oXEAMje2H?format=jpg&name=large)'
+  document.getElementById('rlbvimg').style.backgroundImage = 'url(./flubelbooveimg/flbmc1bv.PNG)'
 })
 mapbvimgs2.addEventListener('click',()=>{
-  document.getElementById('rlbvimg').style.backgroundImage = 'url(https://pbs.twimg.com/media/FjtJ33pXgAU4qCe?format=jpg&name=large)'
+  document.getElementById('rlbvimg').style.backgroundImage = 'url(./flubelbooveimg/flbmc2bv.PNG)'
 })
 mapbvimgs3.addEventListener('click',()=>{
-  document.getElementById('rlbvimg').style.backgroundImage = 'url(https://pbs.twimg.com/media/FjtJ33pXEAAvBpW?format=jpg&name=large)'
+  document.getElementById('rlbvimg').style.backgroundImage = 'url(./flubelbooveimg/flbmc3bv.PNG)'
 })
 mapbvimgs4.addEventListener('click',()=>{
-  document.getElementById('rlbvimg').style.backgroundImage = 'url(https://pbs.twimg.com/media/FjtLgcOWIAAz0wy?format=jpg&name=large)'
+  document.getElementById('rlbvimg').style.backgroundImage = 'url(./flubelbooveimg/flbmc4bv.PNG)'
 })
 mapbvimgs5.addEventListener('click',()=>{
-  document.getElementById('rlbvimg').style.backgroundImage = 'url(https://pbs.twimg.com/media/FjtLgcNXgAMKB_8?format=jpg&name=large)'
+  document.getElementById('rlbvimg').style.backgroundImage = 'url(./flubelbooveimg/flbmc5bv.PNG)'
 })
 mapbvimgs6.addEventListener('click',()=>{
-  document.getElementById('rlbvimg').style.backgroundImage = 'url(https://pbs.twimg.com/media/FjtLgcOXwAA2rBQ?format=jpg&name=large)'
+  document.getElementById('rlbvimg').style.backgroundImage = 'url(./flubelbooveimg/flbdc1bv.PNG)'
 })
 
 let mybutton = document.getElementById("mstupbtn");
@@ -57,7 +57,7 @@ function topFunction() {
 }
 
 mapbvimgs1mb.addEventListener('click',()=>{
-  document.getElementById('actimgbfmb').style.backgroundImage = 'url(https://pbs.twimg.com/media/FjtJ33oXEAMje2H?format=jpg&name=large)'
+  document.getElementById('actimgbfmb').style.backgroundImage = 'url(./flubelbooveimg/flbmc1bv.PNG)'
   document.getElementById('smcr1fbvmb').style.backgroundColor = '#009FFD'
   document.getElementById('smcr2fbvmb').style.backgroundColor = 'white'
   document.getElementById('smcr3fbvmb').style.backgroundColor = 'white'
@@ -66,7 +66,7 @@ mapbvimgs1mb.addEventListener('click',()=>{
   document.getElementById('smcr6fbvmb').style.backgroundColor = 'white'
 })
 mapbvimgs2mb.addEventListener('click',()=>{
-  document.getElementById('actimgbfmb').style.backgroundImage = 'url(https://pbs.twimg.com/media/FjtJ33pXgAU4qCe?format=jpg&name=large)'
+  document.getElementById('actimgbfmb').style.backgroundImage = 'url(./flubelbooveimg/flbmc2bv.PNG)'
   document.getElementById('smcr2fbvmb').style.backgroundColor = '#009FFD'
   document.getElementById('smcr1fbvmb').style.backgroundColor = 'white'
   document.getElementById('smcr3fbvmb').style.backgroundColor = 'white'
@@ -75,7 +75,7 @@ mapbvimgs2mb.addEventListener('click',()=>{
   document.getElementById('smcr6fbvmb').style.backgroundColor = 'white'
 })
 mapbvimgs3mb.addEventListener('click',()=>{
-  document.getElementById('actimgbfmb').style.backgroundImage = 'url(https://pbs.twimg.com/media/FjtJ33pXEAAvBpW?format=jpg&name=large)'
+  document.getElementById('actimgbfmb').style.backgroundImage = 'url(./flubelbooveimg/flbmc3bv.PNG)'
   document.getElementById('smcr3fbvmb').style.backgroundColor = '#009FFD'
   document.getElementById('smcr2fbvmb').style.backgroundColor = 'white'
   document.getElementById('smcr1fbvmb').style.backgroundColor = 'white'
@@ -84,7 +84,7 @@ mapbvimgs3mb.addEventListener('click',()=>{
   document.getElementById('smcr6fbvmb').style.backgroundColor = 'white'
 })
 mapbvimgs4mb.addEventListener('click',()=>{
-  document.getElementById('actimgbfmb').style.backgroundImage = 'url(https://pbs.twimg.com/media/FjtLgcOWIAAz0wy?format=jpg&name=large)'
+  document.getElementById('actimgbfmb').style.backgroundImage = 'url(./flubelbooveimg/flbmc4bv.PNG)'
   document.getElementById('smcr4fbvmb').style.backgroundColor = '#009FFD'
   document.getElementById('smcr2fbvmb').style.backgroundColor = 'white'
   document.getElementById('smcr3fbvmb').style.backgroundColor = 'white'
@@ -93,7 +93,7 @@ mapbvimgs4mb.addEventListener('click',()=>{
   document.getElementById('smcr6fbvmb').style.backgroundColor = 'white'
 })
 mapbvimgs5mb.addEventListener('click',()=>{
-  document.getElementById('actimgbfmb').style.backgroundImage = 'url(https://pbs.twimg.com/media/FjtLgcNXgAMKB_8?format=jpg&name=large)'
+  document.getElementById('actimgbfmb').style.backgroundImage = 'url(./flubelbooveimg/flbmc5bv.PNG)'
   document.getElementById('smcr5fbvmb').style.backgroundColor = '#009FFD'
   document.getElementById('smcr2fbvmb').style.backgroundColor = 'white'
   document.getElementById('smcr3fbvmb').style.backgroundColor = 'white'
@@ -102,7 +102,7 @@ mapbvimgs5mb.addEventListener('click',()=>{
   document.getElementById('smcr6fbvmb').style.backgroundColor = 'white'
 })
 mapbvimgs6mb.addEventListener('click',()=>{
-  document.getElementById('actimgbfmb').style.backgroundImage = 'url(https://pbs.twimg.com/media/FjtLgcOXwAA2rBQ?format=jpg&name=large)'
+  document.getElementById('actimgbfmb').style.backgroundImage = 'url(./flubelbooveimg/flbdc1bv.PNG)'
   document.getElementById('smcr6fbvmb').style.backgroundColor = '#009FFD'
   document.getElementById('smcr2fbvmb').style.backgroundColor = 'white'
   document.getElementById('smcr3fbvmb').style.backgroundColor = 'white'

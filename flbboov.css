@@ -130,11 +130,12 @@ body{
     align-items: center;
     justify-content: center;
     height: 15%;
+    font-weight: 700;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 #alldscftd{
     width: 80%;
-    height: 75%;
-    margin-top: 5%;
+    height: 80%;
     color: white;
     display: flex;
     flex-direction: column;
@@ -148,6 +149,8 @@ body{
     align-items: center;
     justify-content: center;
     height: 15%;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
 }
 #abutappbv{
     background-color: rgb(26, 26, 26);
@@ -218,9 +221,10 @@ body{
     justify-content: space-between;
 }
 #mappnibttl{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
     width: 40%;
     margin-left: 5%;
+    font-weight: 600;
 }
 #bvusrt{
     width: 100%;
@@ -305,6 +309,7 @@ body{
     justify-content: center;
     height: 80%;
     transition: all .2s ease;
+    cursor: pointer;
 }
 #relbvdbtn:hover{
     background-color: #009FFD;
@@ -411,7 +416,7 @@ body{
     width: 95%;
     border-radius: 10px;
     height: 95%;
-    background-image: url(./mcdsdm.PNG);
+    background-image: url(./flubelbooveimg/flbmc1bv.PNG);
     background-repeat: no-repeat;
     background-size:contain;
     background-position: center;
@@ -436,7 +441,7 @@ body{
     height: 9px;
 }
 #mapbvimgs1{
-    background-image: url(./mcdsdm.PNG);
+    background-image: url(./flubelbooveimg/flbmc1bv.PNG);
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center;
@@ -460,34 +465,59 @@ body{
     opacity: 70%;
 }
 #mapbvimgs2{
-    background-image: url(./dcwdm.PNG);
+    background-image: url(./flubelbooveimg/flbmc2bv.PNG);
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center;
 }
 #mapbvimgs3{
-    background-image: url(./stwdm.PNG);
+    background-image: url(./flubelbooveimg/flbmc3bv.PNG);
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center;
 }
 #mapbvimgs4{
-    background-image: url(./mcwlm.PNG);
+    background-image: url(./flubelbooveimg/flbmc4bv.PNG);
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center;
 }
 #mapbvimgs5{
-    background-image: url(./dcwlm.PNG);
+    background-image: url(./flubelbooveimg/flbmc5bv.PNG);
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center;
 }
 #mapbvimgs6{
-    background-image: url(./stwlm.PNG);
+    background-image: url(./flubelbooveimg/flbdc1bv.PNG);
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center;
+}
+#abtappvrsn{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10%;
+}
+#abtltstvrsn{
+    width: 70%;
+    height: 70%;
+    border-radius: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #14b64a;
+    color: #14b64a;
+    transition: all .3s ease;
+    cursor: pointer;
+    
+    font-family: 'Roboto Condensed', sans-serif;
+}
+#abtltstvrsn:hover{
+    letter-spacing: 2px;
+    transition: all .3s ease;
 }
 @media (min-aspect-ratio: 16/9){
     #mainappbdy{
@@ -608,7 +638,7 @@ body{
     #actimgbfmb{
         width: 95%;
         height: 90%;
-        background-image: url(./mcdsdm.PNG);
+        background-image: url(./flubelbooveimg/flbmc1bv.PNG);
         background-repeat: no-repeat;
         background-size:contain;
         background-position: center;
@@ -617,6 +647,9 @@ body{
     }
     #navbarbv{
         justify-content: space-between;
+    }
+    #abtappvrsn{
+        display: none;
     }
     #mapbvimgs1mb,#mapbvimgs2mb,#mapbvimgs3mb,#mapbvimgs4mb,#mapbvimgs5mb,#mapbvimgs6mb{
         min-width: 160px;
@@ -685,7 +718,7 @@ body{
     }
     #ftrsbvfmbbdcamc{
         width: 100%;
-        height: 90%;
+        height: 85%;
         display: flex;
     }
     #dcmttlbvd1{
@@ -738,37 +771,37 @@ body{
         border-bottom: 1px solid #045DE9;
     }
     #mapbvimgs1mb{
-        background-image: url(./mcdsdm.PNG);
+        background-image: url(./flubelbooveimg/flbbvmc1.PNG);
         background-repeat: no-repeat;
         background-size:cover;
         background-position: center;
     }
     #mapbvimgs2mb{
-        background-image: url(./dcwdm.PNG);
+        background-image: url(./flubelbooveimg/flbmc2bv.PNG);
         background-repeat: no-repeat;
         background-size:cover;
         background-position: center;
     }
     #mapbvimgs3mb{
-        background-image: url(./stwdm.PNG);
+        background-image: url(./flubelbooveimg/flbmc3bv.PNG);
         background-repeat: no-repeat;
         background-size:cover;
         background-position: center;
     }
     #mapbvimgs4mb{
-        background-image: url(./mcwlm.PNG);
+        background-image: url(./flubelbooveimg/flbmc4bv.PNG);
         background-repeat: no-repeat;
         background-size:cover;
         background-position: center;
     }
     #mapbvimgs5mb{
-        background-image: url(./dcwlm.PNG);
+        background-image: url(./flubelbooveimg/flbmc5bv.PNG);
         background-repeat: no-repeat;
         background-size:cover;
         background-position: center;
     }
     #mapbvimgs6mb{
-        background-image: url(./stwlm.PNG);
+        background-image: url(./flubelbooveimg/flbdc1bv.PNG);
         background-repeat: no-repeat;
         background-size:cover;
         background-position: center;
@@ -826,9 +859,11 @@ body{
         margin-left: 5%;
         height: 1.5%;
         color: white;
-        font-size: 1.2rem;
+        font-size: 1.4rem;
         display: flex;
         align-items: flex-end;
+        font-weight: 700;
+        font-family: 'Roboto Condensed', sans-serif;
     }
     #mbappfbvtgs{
         width: 100%;
