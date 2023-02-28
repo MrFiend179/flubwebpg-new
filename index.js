@@ -88,20 +88,19 @@ dot1.addEventListener('click',()=>{
   element2.scrollIntoView({behavior: "smooth"});
 })
 setTimeout(() => {
-const observer = new IntersectionObserver((entries)=>{
-  entries.forEach((entry)=>{
-   // console.log(entry)
-    if(entry.isIntersecting){
-      entry.target.classList.add('show');
-    }else{
-      entry.target.classList.remove('show');
-    }
-  })
-})
-const hiddenelements = document.querySelectorAll('.hidden')
-hiddenelements.forEach((el)=> observer.observe(el));
-
-}, 5000);
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+        observer.unobserve(entry.target); // stop observing after element is visible
+      } else {
+        entry.target.classList.remove('show');
+      }
+    });
+  }, { once: true }); // add "once" option
+  const hiddenelements = document.querySelectorAll('.hidden');
+  hiddenelements.forEach((el) => observer.observe(el));
+}, 1000);
 let mybutton = document.getElementById("mstupbtn");
 mybutton.addEventListener('click',()=>{
   topFunction()
@@ -137,3 +136,252 @@ ourdcs.addEventListener('click',()=>{
   document.getElementById('navbar').style.position = 'relative'
   })
 })
+
+const video = document.getElementById('intvid1');
+const wrapper = document.getElementById('video-wrapper');
+
+window.addEventListener('scroll', () => {
+  let scrollPos = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+  let videoHeight = wrapper.offsetHeight;
+  let screenHeight = window.innerHeight;
+  
+  if (scrollPos > screenHeight * 0.1) {
+    let scale = 1 - ((scrollPos - (videoHeight - screenHeight)) / screenHeight * 1);
+    if (scale < 0.5) {
+      scale = 0.5;
+    }
+    video.style.transform = `scale(${scale})`;
+  } else {
+    video.style.transform = 'scale(1)';
+  }
+});
+
+
+       const carouselText = [
+  { text: "Flubel", color: "#009FFD" },
+  { text: "Flubel", color: "#50c878" },
+  { text: "Flubel", color: "#045DE9" },
+  { text: "Flubel", color: "#ff5555" }
+];
+
+document.addEventListener("DOMContentLoaded", function() {
+  carousel(carouselText, "#lnawaw");
+});
+
+async function typeSentence(sentence, eleRef, delay = 100) {
+  const letters = sentence.split("");
+  let i = 0;
+  while (i < letters.length) {
+    await waitForMs(delay);
+    document.querySelector(eleRef).textContent += letters[i];
+    i++;
+  }
+  return;
+}
+
+async function deleteSentence(eleRef) {
+  const sentence = document.querySelector(eleRef).innerHTML;
+  const letters = sentence.split("");
+  let i = 0;
+  while (letters.length > 0) {
+    await waitForMs(100);
+    letters.pop();
+    document.querySelector(eleRef).innerHTML = letters.join("");
+  }
+}
+
+async function carousel(carouselList, eleRef) {
+  var i = 0;
+  while (true) {
+    updateFontColor(eleRef, carouselList[i].color)
+    await typeSentence(carouselList[i].text, eleRef);
+    await waitForMs(1500);
+    await deleteSentence(eleRef);
+    await waitForMs(500);
+    i++
+    if (i >= carouselList.length) {i = 0;}
+  }
+}
+
+function updateFontColor(eleRef, color) {
+  document.querySelector(eleRef).style.color = color;
+}
+
+function waitForMs(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms))
+}
+
+
+// Define an array of jokes
+var jokes = [
+  {
+    question: "Why did the physics professor break up with the biology professor?",
+    answer: "There was no chemistry!"
+  },
+  {
+    question: "Why don't scientists trust atoms?",
+    answer: "Because they make up everything."
+  },
+  {
+    question: "Why don't programmers like nature?",
+    answer: "It has too many bugs."
+  },
+  {
+    question: "Why did the tomato turn red?",
+    answer: "Because it saw the salad dressing."
+  },
+  {
+    question: "Why don't oysters share their pearls?",
+    answer: "Because they're shellfish."
+  },
+  {
+    question: "Why did the cookie go to the doctor?",
+    answer: "Because it was feeling crumbly."
+  },
+  {
+    question: "What do you get when you cross a snowman and a shark?",
+    answer: "Frostbite."
+  },
+  {
+    question: "Why did the scarecrow win an award?",
+    answer: "Because he was outstanding in his field."
+  },
+  {
+    question: "Why was the math book sad?",
+    answer: "Because it had too many problems."
+  },
+  {
+    question: "Why did the banana go to the doctor?",
+    answer: "Because it wasn't peeling well."
+  },
+  {
+    question: "What do you call a boomerang that doesn't come back?",
+    answer: "A stick."
+  },
+  {
+    question: "Why did the chicken cross the playground?",
+    answer: "To get to the other slide."
+  },
+  {
+    question: "Why did the frog call his insurance company?",
+    answer: "He had a jump in his car."
+  },
+  {
+    question: "What do you call a fake noodle?",
+    answer: "An impasta."
+  },
+  {
+    question: "Why was the computer cold?",
+    answer: "Because it left its Windows open."
+  },
+  {
+    question: "Why did the coffee file a police report?",
+    answer: "It got mugged."
+  },
+  {
+    question: "What do you get when you cross a snowman and a vampire?",
+    answer: "Frostbite."
+  },
+  {
+    question: "Why did the belt go to jail?",
+    answer: "For holding up pants."
+  },
+  {
+    question: "Why did the golfer wear two pairs of pants?",
+    answer: "In case he got a hole in one."
+  },
+  {
+    question: "Why did the bicycle fall over?",
+    answer: "Because it was two-tired."
+  },
+  {
+    question: "What do you get when you cross a sheep and a kangaroo?",
+    answer: "A woolly jumper."
+  },
+  {
+    question: "Why did the jellybean go to school?",
+    answer: "To become a smartie."
+  },
+  {
+    question: "Why was the tomato blushing?",
+    answer: "Because it saw the salad dressing."
+  },
+  {
+    question: "Why was the belt arrested?",
+    answer: "For holding up pants."
+  },
+  {
+    question: "Why don't seagulls fly by the bay?",
+    answer: "Because then they'd be bay-gulls!"
+  },
+  {
+    question: "What do you call a sleeping bull?",
+    answer: "A bulldozer."
+  },
+  {
+    question: "Why did the scarecrow win an award?",
+    answer: "Because he was outstanding in his field."
+  }
+]
+
+// Generate a random index to select a joke from the array
+var randomIndex = Math.floor(Math.random() * jokes.length);
+
+// Use the selected joke's question and answer to animate the typing
+var i = 0;
+var txt = jokes[randomIndex].question;
+var speed = 100;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("qustn").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  } else {
+    setTimeout(() => {
+      typeWriter1();
+    }, 2000);
+  }
+}
+
+var i1 = 0;
+var txt1 = jokes[randomIndex].answer;
+var speed1 = 100;
+
+function typeWriter1() {
+  if (i1 < txt1.length) {
+    document.getElementById("answr").innerHTML += txt1.charAt(i1);
+    i1++;
+    setTimeout(typeWriter1, speed1);
+  }
+}
+
+// Call the function to start animating the typing
+typeWriter();
+
+// Call the first function to start the typing effect
+typeWriter();
+
+function fnctese(){
+  document.getElementById('imgtrfldr').style.rotate = '720deg'
+  setTimeout(() => {
+    document.getElementById('imgtrfldr').style.rotate = '0deg'
+  }, 5000);
+  setTimeout(() => {
+    document.getElementById('imgtrfldr').style.rotate = '720deg'
+  }, 10000);
+  setTimeout(() => {
+    document.getElementById('imgtrfldr').style.rotate = '0deg'
+  }, 15000);
+  setTimeout(() => {
+    document.getElementById('imgtrfldr').style.rotate = '720deg'
+  }, 20000);
+  setTimeout(() => {
+    document.getElementById('imgtrfldr').style.rotate = '0deg'
+  }, 25000);
+  setTimeout(() => {
+    document.getElementById('imgtrfldr').style.rotate = '720deg'
+  }, 30000);
+  return;
+}
+fnctese()

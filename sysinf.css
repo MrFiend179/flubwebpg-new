@@ -300,6 +300,7 @@ body{
     justify-content: center;
     height: 80%;
     transition: all .2s ease;
+    cursor: pointer;
 }
 #relbvdbtn:hover{
     background-color: #009FFD;

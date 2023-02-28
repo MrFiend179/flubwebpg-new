@@ -5,12 +5,17 @@
     <meta name="description" content="Flubel makes and develops the most advanced, open sourced and easy to use softwares">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:title" content="Flubel">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@Flubel_">
     <meta name="twitter:title" content="Flubel">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link href="https://vjs.zencdn.net/7.15.4/video-js.css" rel="stylesheet" />
+    <script src="https://vjs.zencdn.net/7.15.4/video.js"></script>
     <meta name="twitter:description" content="Flubel makes and develops the most advanced,open sourced and easy to use softwares">
     <meta name="twitter:image" content="https://live.staticflickr.com/65535/52658673594_772418ba54_n.jpg">
     <meta name="twitter:url" content="https://flubel.cf">
@@ -30,13 +35,44 @@
 </head>
 <body>
     <div class="spinner">
-        <div id="sntrdvfldrsc">
+        <!--<div id="sntrdvfldrsc">
             <div id="tpttlfbg">
-                <img src="./mlg2m-removebg-preview.png" alt="" height="200px">
+                <img src="./mlg2m-removebg-preview.png" alt="" height="70px">
+            </div>
+            <div id="actfnquots">
+                <div id="qustn"></div>
+                <siv id="answr"></siv>
             </div>
             <div id="btmbrldrm">
                 <lord-icon src="https://cdn.lordicon.com/xjovhxra.json" trigger="loop" colors="primary:#ffffff,secondary:#08a88a" style="width:60px;height:60px"></lord-icon>
+            </div>
+        </div>-->
+        <div id="lsospv">
+            <div id="ldngttl">Loading...</div>
+            <div id="actfnquots">
+                <div id="qustn"></div>
+                <siv id="answr"></siv>
+            </div>
+            <div id="tpttlfbg">
+                <img id="imgtrfldr" src="./mlg2m-removebg-preview.png" alt="" height="100px">
+            </div>
+            <div id="fbfmttlldr">FLUBEL BY FIEND</div>
+        </div>
+        <div id="rsofpnr">
+            <div id="abtscls">
+                <div id="socialshdd">SOCIALS</div>
+                <div id="abttcntr">
+                    <div id="scls1" onclick="window.open('https://discord.gg/Ga4pHSEcjK')">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="4rem" height="4rem" viewBox="0 0 24 24"><path fill="white" d="M19.27 5.33C17.94 4.71 16.5 4.26 15 4a.09.09 0 0 0-.07.03c-.18.33-.39.76-.53 1.09a16.09 16.09 0 0 0-4.8 0c-.14-.34-.35-.76-.54-1.09c-.01-.02-.04-.03-.07-.03c-1.5.26-2.93.71-4.27 1.33c-.01 0-.02.01-.03.02c-2.72 4.07-3.47 8.03-3.1 11.95c0 .02.01.04.03.05c1.8 1.32 3.53 2.12 5.24 2.65c.03.01.06 0 .07-.02c.4-.55.76-1.13 1.07-1.74c.02-.04 0-.08-.04-.09c-.57-.22-1.11-.48-1.64-.78c-.04-.02-.04-.08-.01-.11c.11-.08.22-.17.33-.25c.02-.02.05-.02.07-.01c3.44 1.57 7.15 1.57 10.55 0c.02-.01.05-.01.07.01c.11.09.22.17.33.26c.04.03.04.09-.01.11c-.52.31-1.07.56-1.64.78c-.04.01-.05.06-.04.09c.32.61.68 1.19 1.07 1.74c.03.01.06.02.09.01c1.72-.53 3.45-1.33 5.25-2.65c.02-.01.03-.03.03-.05c.44-4.53-.73-8.46-3.1-11.95c-.01-.01-.02-.02-.04-.02zM8.52 14.91c-1.03 0-1.89-.95-1.89-2.12s.84-2.12 1.89-2.12c1.06 0 1.9.96 1.89 2.12c0 1.17-.84 2.12-1.89 2.12zm6.97 0c-1.03 0-1.89-.95-1.89-2.12s.84-2.12 1.89-2.12c1.06 0 1.9.96 1.89 2.12c0 1.17-.83 2.12-1.89 2.12z"/></svg>
+                    </div>
+                    <div id="scls2" onclick="window.open('https://github.com/MrFiend179')">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="4rem" height="4rem" viewBox="0 0 24 24"><path fill="white" d="M12 2C6.475 2 2 6.475 2 12a9.994 9.994 0 0 0 6.838 9.488c.5.087.687-.213.687-.476c0-.237-.013-1.024-.013-1.862c-2.512.463-3.162-.612-3.362-1.175c-.113-.288-.6-1.175-1.025-1.413c-.35-.187-.85-.65-.013-.662c.788-.013 1.35.725 1.538 1.025c.9 1.512 2.338 1.087 2.912.825c.088-.65.35-1.087.638-1.337c-2.225-.25-4.55-1.113-4.55-4.938c0-1.088.387-1.987 1.025-2.688c-.1-.25-.45-1.275.1-2.65c0 0 .837-.262 2.75 1.026a9.28 9.28 0 0 1 2.5-.338c.85 0 1.7.112 2.5.337c1.912-1.3 2.75-1.024 2.75-1.024c.55 1.375.2 2.4.1 2.65c.637.7 1.025 1.587 1.025 2.687c0 3.838-2.337 4.688-4.562 4.938c.362.312.675.912.675 1.85c0 1.337-.013 2.412-.013 2.75c0 .262.188.574.688.474A10.016 10.016 0 0 0 22 12c0-5.525-4.475-10-10-10z"/></svg>
 
+                    </div>
+                    <div id="scls3" onclick="window.open('https://twitter.com/Flubel_')">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="4rem" height="4rem" viewBox="0 0 24 24"><path fill="white" d="M22.46 6c-.77.35-1.6.58-2.46.69c.88-.53 1.56-1.37 1.88-2.38c-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29c0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15c0 1.49.75 2.81 1.91 3.56c-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07a4.28 4.28 0 0 0 4 2.98a8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21C16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56c.84-.6 1.56-1.36 2.14-2.23Z"/></svg>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -80,11 +116,17 @@
         </div>
     </div>
     <div id="mainttl1">
-        <video id="intvid1" loop autoplay muted>
+        <div id="video-wrapper">
+            <video id="intvid1" class="video-js vjs-styles-dimensions vjs-fluid" loop autoplay muted>
+              <source src="./Futuristic - 34997.mp4" type="video/mp4">
+            </video>
+          </div>
+          
+        <video id="intvid1mb" loop autoplay muted>
             <source src="./Futuristic - 34997.mp4" type="video/mp4">
         </video>
         <div id="maintxtt">
-            <h1 id="txtmtt">The world's most open and advanced easy to use softwares</h1>
+            <h1 id="txtmtt">The world's most <span id="donttchng">open</span> and <span id="donttchng">advanced</span> easy to use softwares by <span id="lnawaw"></span><span class="input-cursor"></span></h1>
             <div id="blnkbr">
                 <div id="mbr"></div>
             </div>
