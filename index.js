@@ -97,7 +97,7 @@ setTimeout(() => {
         entry.target.classList.remove('show');
       }
     });
-  }, { once: true }); // add "once" option
+  }, { once: true });
   const hiddenelements = document.querySelectorAll('.hidden');
   hiddenelements.forEach((el) => observer.observe(el));
 }, 1000);
