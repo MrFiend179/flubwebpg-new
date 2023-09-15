@@ -97,8 +97,8 @@ setTimeout(() => {
         entry.target.classList.remove('show');
       }
     });
-  }, { once: true });
-  const hiddenelements = document.querySelectorAll('.hidden');
+  });
+  const hiddenelements = document.querySelectorAll('.hidden12');
   hiddenelements.forEach((el) => observer.observe(el));
 }, 1000);
 let mybutton = document.getElementById("mstupbtn");

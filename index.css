@@ -666,11 +666,11 @@ body{
     width: 100%;
     transition: all .1s ease;
 }
-.hidden{
+.hidden12{
     opacity: 0;
     filter: blur(3px);
     transition: all .3s;
-    transform: translateY(70%);
+    transform: translateX(70%);
 }
 .show{
     opacity: 1;
