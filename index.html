@@ -173,7 +173,7 @@
                 <div id="app3img">
                     <div id="actimg3"></div>
                 </div>
-                <div id="app3name">&nbsp;Coming Soon</div></div>
+                <div id="app3name">&nbsp;FlubelMC</div></div>
             <div id="app4">
                 <div id="app4img">
                     <div id="actimg4"></div>
@@ -355,11 +355,20 @@
             document.querySelector(".spinner").style.display = "none";
 		        $('*').removeClass('stpppls')
             }, 3000);
-            document.querySelector("video").addEventListener('canplay', function(){
+            // document.querySelector("video").addEventListener('canplay', function(){
+            //     document.querySelector(".spinner").style.display = "none"; 
+		    //     $('*').removeClass('stpppls')
+		        
+            // });
+            if( document.querySelector("video").addEventListener('canplay')){
                 document.querySelector(".spinner").style.display = "none"; 
 		        $('*').removeClass('stpppls')
-		        
-            });
+            }else{
+                setTimeout(() => {
+                document.querySelector(".spinner").style.display = "none"; 
+		        $('*').removeClass('stpppls')
+                }, 5000);
+            }
         });
         });
     </script>
